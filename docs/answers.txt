@@ -1,0 +1,81 @@
+(a)	Console output from git push command:
+		Enumerating objects: 11, done.
+		Counting objects: 100% (11/11), done.
+		Delta compression using up to 8 threads
+		Compressing objects: 100% (5/5), done.
+		Writing objects: 100% (7/7), 886 bytes | 886.00 KiB/s, done.
+		Total 7 (delta 2), reused 0 (delta 0)
+		remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+		To https://github.com/ArthVader/Assignment1.git
+			1ea153d..f0ed6cd  master -> master
+
+(b) 	So far there have been 15 commits.
+		git command used to get this information: git rev-list --all --count
+
+(c) 	The .gitignore file was last modified on Thu Sep 15 10:29:34 2016 -0400
+		git command used to get this information: git log .gitignore
+
+(d) 	Two reasons why branches are used in a Git repository:
+		-Multiple contributors to a project can work on different features safely
+		without having any conflicts between changes of their work. 
+		-The changes made to the project are abstracted so they dont alter 
+		the master branch of the project until final changes are ready to be made.
+		This allows for seperating implementation of different versions of a 
+		project and experimental features from a main stable version of the
+		project. This also helps for having different versions of a project, that 
+		wont conflict, being worked on concurrently. 
+
+(e) 	The difference between git log and git status is that git log shows us a 
+		list of all commits done by all users working on the project; git 
+		status shows us the state of the current working tree, such as what has
+		changed since the last commit. This also includes telling
+		us which files are ready to be committed if they have been staged using 
+		the git add command. If any files have been modified and they are tracked
+		by git we would be notified of this in git status as well.
+
+(f) 	The command I would use to see the commits where "Weapon.h" was one of
+		the committed files would be: 
+		git log --follow ./src/edu/fsu/cs/cen5035/Weapon.java
+
+(g) 	The command I would use to see the commits whose commit message
+		contains the word "file" would be:
+		git log --grep="file"
+
+(h) 	In the context of object-oriented programming:
+	(I) 	Inheritance is when a class adopts properties that are featured in
+			another class, usually known as a parent class. This new "child" class
+			contains these inherited features/properties from the parent class 
+			and builds itself with a base starting from that parent class.
+	(II)	Polymorphism is when multiple classes inherit from the same parent 
+			class, and each child class then inherits the same functions and 
+			variables from that parent class, which then allows for each child
+			class to utilize the same interface for differing underlying forms of
+			the variables and functions in respect to their specific requirements.
+			This allows for processing objects differently depending on their 
+			respective classes and data type requirements, which then allows for 
+			redifining methods uniquely for classes that are derived from the 
+			parent class.
+	(III) Encapsulation is an approach to hiding the internal data and state of a
+			class implementation from outside users. This approach puts all the 
+			data with the methods that perform operations on that data. This hides
+			the values and states of the data objects inside a class. Functions 
+			may be used to retrieve internal data values and alter them if
+			permission is allowed.
+
+(i) 	The main difference between the "Dictator and Lieutenants" workflow and 
+		the "Integration management" workflow is who manages all of the conflicts
+		that need to be resolved and finally pushes to the main branch of the 
+		blessed repository. In the "Dictator and Lieutenants" workflow, the 
+		"Lieutenants" each merge changes to portions of changes they are granted
+		access to doing. The "Dictator" then gathers the work done by the 
+		"Lieutenants" and finally merges into the bless repository. In the 
+		"Integration management" workflow the "Integration Manager" gets all 
+		changes and pushes them(or merges them) into the bless repository.
+
+(j) 	A team of 100 developers would benefit more by following the
+		"Dictator and Lieutenants" workflow instead of "Centralized" workflow
+		because it divides the workload between the "Lieutenants" rather then 
+		sending all the work pushed to the "Integration Manager" in the 
+		"Centralized" workflow. By splitting the work to the "Lieutenants",
+		this workflow can work more efficiently for large teams like 100 
+		developers.
