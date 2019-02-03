@@ -1,3 +1,4 @@
+3.E.
 (a)	Console output from git push command:
 		Enumerating objects: 11, done.
 		Counting objects: 100% (11/11), done.
@@ -79,3 +80,14 @@
 		"Centralized" workflow. By splitting the work to the "Lieutenants",
 		this workflow can work more efficiently for large teams like 100 
 		developers.
+
+5.	The RoleGame prototype is using polymorphism and could be interpreted
+ 	as using encapsultation. Polymorphism is used because every weapon class 
+	is derived from the same parent class called BasicWeapon, and then for 
+	each weapon it uses a modified version of the hit function relevant to the 
+	specific weapons characteristics. Encapsulation is used because we are using 
+	classes to contain all of the details for each weapon, and the methods for
+	each weapon are contained within each specific weapons class. If
+	encapsultation is considered specifically to be using private variables to
+	hide the internal state of the data, then we are not using encapsulation, as
+	we are not using any private variables in the RoleGame prototype.
